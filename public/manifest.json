@@ -1,6 +1,6 @@
 {
-  "name": "Template",
-  "description": "This is template extensions",
+  "name": "Extended Video Controls",
+  "description": "sample description",
   "version": "1.0",
   "manifest_version": 3,
   "action": {},
@@ -11,12 +11,17 @@
       ],
       "js": [
         "content.js"
-      ]
+      ],
+      "run_at": "document_end"
     }
   ],
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "background": {
     "service_worker": "background.js"
